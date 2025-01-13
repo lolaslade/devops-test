@@ -1,0 +1,8 @@
+special_page.page:
+  path: '/special'
+  defaults:
+    # For page callbacks that return a render array use _controller.
+    _controller: '\Drupal\special_page\Controller\SpecialController::page'
+  # Require a permission to access this route.
+  requirements:
+    _permission: 'access content'
